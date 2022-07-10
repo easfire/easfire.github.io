@@ -15,7 +15,7 @@
 软件构建过程中，某些对象的状态如果改变，其行为也会随之发生变化。比如文档处于只读状态，其支持的行为和读写状态支持的行为就可能完全不同。如何在运行时，根据对象的状态来透明地更改对象的行为？而不会为对象操作和状态转换之间引入紧耦合？
 
 ### 状态机模型
-![state module code](https://pic4.zhimg.com/80/v2-dc8f0689ca7b878526f793e07de90b2b_1440w.jpg)
+![state module code](https://pic4.zhimg.com/v2-dc8f0689ca7b878526f793e07de90b2b_r.jpg)
 
 状态机模型创建完毕，在每个状态机对象内，每个操作接口在完成自身任务后，都给 pNext指针赋值到下一个State对象指针。接下来需要 Processor类启动定义好的状态机。
 ![state module code](https://pic4.zhimg.com/80/v2-0043558ddab3941114161fdd523dfbcf_1440w.jpg)
@@ -30,7 +30,7 @@
 State模式将所有与一个特定状态相关的行为都放在一个State的子类对象中，在对象状态切换时，切换相应的对象；但同时维持State的接口，这样实现了具体操作和状态转换之间的解耦。
 
 为不同的状态引入不同的对象使得状态转换变得更加明确，而且可以保证不会出现状态不一致的情况。因为转换时原子性的---即要么彻底转换过来，要么不转换。
-![compare](https://pic3.zhimg.com/80/v2-b6c1af47d856fca029e52f99db88d95e_1440w.jpg)
+![compare](https://pic3.zhimg.com/v2-b6c1af47d856fca029e52f99db88d95e_r.jpg)
 
 State模式确实和 Strategy模式很像，不过 State模式在状态的轮转方面有更多的建设。
 ![state vs strategy](https://pic1.zhimg.com/80/v2-25ce2536cfb12cd0fbcb76e45731c73c_1440w.jpg)
