@@ -37,7 +37,7 @@ State模式确实和 Strategy模式很像，不过 State模式在状态的轮转
 
 ### 伪代码
 
-```cpp
+```
 // 接口函数变为状态对象的行为。
 class NetworkState {
 public:
