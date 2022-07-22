@@ -3,4 +3,4 @@
 
 in this course, about how to build big storage systems, so the larger topic is big storage
 
-在本课程中，关于如何构建大存储系统，所以更大的`主题`是大存储。
+在本课程中，关于如何构建大存储系统，所以更大的主题是大存储。
